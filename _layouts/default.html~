@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<title>Chexee.me | Small and compact</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://chexee.me/wp-content/themes/chexee-me-2013/style.css" />
+	<link rel="pingback" href="http://chexee.me/xmlrpc.php" />
+	<!--[if lt IE 9]>
+	<script src="http://chexee.me/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="Chexee.me &raquo; Feed" href="http://chexee.me/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Chexee.me &raquo; Comments Feed" href="http://chexee.me/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Chexee.me &raquo; Portfolio Comments Feed" href="http://chexee.me/portfolio/feed/" />
+<link rel='stylesheet' id='fancyboxcss-css'  href='http://chexee.me/wp-content/themes/chexee-me-2013/js/fancybox/jquery.fancybox.css?ver=3.6-alpha-23334' type='text/css' media='all' />
+<script type='text/javascript' src='http://chexee.me/wp-includes/js/comment-reply.min.js?ver=3.6-alpha-23334'></script>
+<script type='text/javascript' src='http://chexee.me/wp-includes/js/jquery/jquery.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://chexee.me/wp-includes/js/jquery/jquery-migrate.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://chexee.me/wp-content/themes/chexee-me-2013/js/cycle.min.js?ver=1'></script>
+<script type='text/javascript' src='http://chexee.me/wp-content/themes/chexee-me-2013/js/fancybox/jquery.fancybox.pack.js?ver=1'></script>
+<script type='text/javascript' src='http://chexee.me/wp-content/themes/chexee-me-2013/js/actions.js?ver=1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://chexee.me/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://chexee.me/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='About' href='http://chexee.me/about/' />
+<meta name="generator" content="WordPress 3.6-alpha-23334" />
+<link rel='canonical' href='http://chexee.me/' />
+<link rel='shortlink' href='http://wp.me/P1P4EB-12H' />
+	<link rel="shortcut icon" href="http://chexee.me/wp-content/themes/chexee-me-2013/favicon.ico" />
+
+	<!-- Include Typekit -->
+	<script type="text/javascript" src="//use.typekit.net/kby0nrq.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body class="home page page-id-4011 page-template page-template-template-home-php single-author singular one-column content">
+
+	<!-- <header class="global">
+		<h1 id="site-title"><span><a href="http://chexee.me/" title="Chexee.me" rel="home">Chexee.me</a></span></h1>
+		<h2 id="site-description">Small and compact</h2>
+
+		<nav id="access" role="navigation">
+					</nav><!-- #access -->
+
+	</header><!-- .global -->
+
+
+	<div class="content">
+
+
+	<section class="lede">
+		<h1>
+			I&rsquo;m <strong class="me">Chelsea Otakan</strong>. I&rsquo;m a <strong>user interface designer</strong> for <a href="http://taskrabbit.com">TaskRabbit</a>. I lurve <strong>psychology</strong>, <strong>design</strong>, <strong>health &amp; fitness</strong>, <strong>open source</strong>, <strong>data</strong>, <strong>drawing</strong>, <strong>people</strong>, and the color <strong>#5E477D</strong>. People like to call me <strong>Chexee</strong>.
+		</h1>
+		<p>
+			You can find me on <a href="http://twitter.com/chexee">Twitter</a>,
+			<a href="http://dribbble.com/chexee">Dribbble</a>,
+			<a href="https://github.com/chexee">GitHub</a>,
+			<a href="http://www.linkedin.com/in/cotakan">LinkedIn</a>,
+			<a href="http://facebook.com/chexee">Facebook</a>,
+			<a href="http://www.fitbit.com/user/22L9HB">Fitbit</a>,
+			<a href="http://www.rdio.com/people/chexee/">Rdio</a> and
+			<a href="http://chexee.wordpress.com">WordPress.com</a>.
+	</section>
+
+	<!--<section class="contact top">
+		<p>
+			I&rsquo;m looking for new and exciting opportunities. Got something awesome for me? <a href="mailto:chexee@gmail.com">Tell me all about it.</a>
+		</p>
+	</section>-->
+
+	<section class="work">
+		<h2>My Work</h2>
+
+		<div class="work-slider">
+			<div class="project wp-core">
+
+				<h3>WordPress Core</h3>
+
+				<ul class="project-meta">
+					<li><strong>Roles:</strong> Interface Design, Icon Design, User Experience</li>
+					<li><strong>Tools:</strong> WordPress, PHP, CSS, Subversion, Photoshop</li>
+				</ul>
+
+				<div class="description">
+
+					<a href="http://wordpress.org" target="_blank">
+						<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpcore-about-page.png" alt="Feature Pointers introduced in WordPress 3.3" class="main-image" />
+					</a>
+
+					<p class="lede">
+						<a href="http://wordpress.org">WordPress</a> is an open source, online publishing platform that currently powers over 17% of the web. I've worked closely with the <a href="http://make.wordpress.org/ui">WordPress UI Group</a> and the WordPress Core team and to make user interface design, CSS, and iconography contributions to every release since WordPress 3.2. I was featured as a "Recent Rockstar" on the WordPress 3.3 credits page for my contributions.
+					</p>
+
+					<figure class="align-left feature-pointer">
+						<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpcore-feature-pointer.png" alt="Feature Pointers introduced in WordPress 3.3" />
+						<figcaption>Feature Pointers introduced in WordPress 3.3</figcaption>
+					</figure>
+
+					<figure class="align-right">
+						<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpcore-browser-nags.png" alt="Feature Pointers introduced in WordPress 3.3" width="400" />
+						<figcaption>Browser upgrade nags introduced in WordPress 3.2</figcaption>
+					</figure>
+
+					<p>
+						I joined the WordPress UI group in October of 2010 and began my first foray into contributing to open source projects. Since then, I've contributed to every major version of WordPress (including the pending 3.5 release). See my contributions and Trac activity at my <a href="http://profiles.wordpress.org/chexee">WordPress.org profile</a>.
+					</p>
+
+				</div>
+			</div><!-- .project -->
+
+
+			<div class="project">
+
+				<h3>WordPress.com Homepage Experiment</h3>
+
+				<ul class="project-meta">
+					<li><strong>Roles:</strong> Interface Design, User Experience, Front-end Development, Prototyping</li>
+					<li><strong>Tools:</strong> WordPress, HTML, CSS, Subversion, Sketch, KISSmetrics</li>
+				</ul>
+
+				<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpcom-simple-home.png" class="align-center" />
+
+				<p class="lede">
+					I helped launch several tests for the <a href="http://wordpress.com">WordPress.com</a> logged-out homepage designed to measure the effect of simplicity. Using a combination of <a href="http://optimizely.com">Optimizely</a> and <a href="http://kissmetrics.com">KISSmetrics</a>, we iterated on a simplified versions of the homepage to see which elements had a positive effect on user engagement.
+				</p>
+
+				<ul class="three-col">
+					<li>
+						<h4>Designing the Test</h4>
+						<p>
+							I worked with the Growth team to design a test that would help us learn if expounding on features on the homepage was actually helpful to users deciding whether or not to sign up.
+						</p>
+						<p>
+							Our goal for this test was to learn more about how our users interact with the homepage and what effect it had on further user engagament (specifically logging in or signing up).
+						</p>
+						<p>
+							The current WordPress.com homepage is very marketing heavy with quite a bit going on. We wanted to see how a simple, more focused homepage would effect the number of users who login or signup.
+						</p>
+					</li>
+					<li>
+						<h4>Designing the Variation</h4>
+						<a href="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpcom-homepage-test.png" class="pop"><img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpcom-homepage-test.png"/></a>
+						<p>
+							I designed and coded a very simple version of the WordPress.com homepage with only two major elements: a login form and a signup call to action.
+						</p>
+					</li>
+					<li>
+						<h4>Gathering &amp; Interpeting the Results</h4>
+						<p>
+							Using <a href="http://optimizely.com">Optimizely</a> and <a href="http://kissmetrics.com">KISSmetrics</a>, I worked with the Growth team at Automattic to launch the test for 5% of users. We sent half of this sample group to current logged-out homepage (the control) and half to the new, simplified homepage and compared the conversions of the new simplified homepage against the control group.
+						</p>
+						<p>
+							After running the test for one week and collecting around 10,000 samples, the Growth team reported on and intepreted the results. We saw 2%-3% increases for both logins and signups.
+						</p>
+						<p>
+							We continued to iterate and test this design, optimizing for logins and signups.
+						</p>
+					</li>
+				</ul>
+			</div><!-- .project -->
+
+			<div class="project wpcom-store">
+
+				<h3>WordPress.com Store</h3>
+
+				<ul class="project-meta">
+					<li><strong>Roles:</strong> Interface Design, User Experience, Illustration, Prototyping</li>
+					<li><strong>Tools:</strong> Sketch, HTML, CSS, jQuery, WordPress, PHP, Subversion</li>
+				</ul>
+
+				<a href="http://store.wordpress.com" target="_blank">
+					<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wpstore-main.png" alt="" class="main-image" />
+				</a>
+
+				<p class="lede">
+					I worked with the Store Team at Automattic to begin to re-envision the upgrade purchase experience at WordPress.com. Together, we launched a new, experimental version of the Store and took iterative steps to replacing the old purchase flow. We tested designs and collected data all along the way to make sure we were moving in the right direction.
+				</p>
+
+				<ul class="wpstore-checkout three-col">
+					<li>
+						<figure>
+							<a href="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wp-checkout-1.png" class="pop" rel="store-project"><img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wp-checkout-1-sm.png" /></a>
+							<figcaption>Domain Registration: Checking availability</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<a href="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wp-checkout-2.png" class="pop" rel="store-project"><img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wp-checkout-2-sm.png" /></a>
+							<figcaption>Domain Registration: Contact details</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<a href="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wp-checkout-3.png" class="pop" rel="store-project"><img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wp-checkout-3-sm.png" /></a>
+							<figcaption>Domain Registration: Payment Details</figcaption>
+						</figure>
+					</li>
+				</ul>
+
+			</div><!-- .project -->
+
+
+			<div class="project">
+
+				<h3>WordCamp.org</h3>
+
+				<ul class="project-meta">
+					<li><strong>Roles:</strong> Visual Design, Branding, Front-end Development</li>
+					<li><strong>Tools:</strong> WordPress, PHP, CSS, Photoshop</li>
+				</ul>
+
+				<a href="http://wordcamp.org" target="_blank">
+					<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/wordcamp-homepage.png" alt="" class="main-image" />
+				</a>
+
+				<p class="lede single">
+					WordCamps are locally-organized conferences that focus on everything WordPress. Since 2006, there have been over 200 WordCamps in over 100 cities. I designed and helped develop the branding and user interface for <a href="http://central.wordcamp.org">WordCamp Central</a>, a site that brings together the community and provides information on WordCamps around the world.
+				</p>
+
+			</div><!-- .project -->
+
+			<div class="project">
+
+				<h3>Automattobot</h3>
+
+				<ul class="project-meta">
+					<li><strong>Roles:</strong> Illustration</li>
+					<li><strong>Tools:</strong> Illustrator, Pen &amp; Paper</li>
+				</ul>
+
+				<img src="http://chexee.me/wp-content/themes/chexee-me-2013/images/portfolio/automattobot-main.png" alt="Automattobot" class="main-image" style="border:0" />
+
+
+				<p class="lede single">
+					Automattobot was initially designed for im.wordpress.com, but didn’t quite make it there. He recieves and sends jabber signals, but I’ve modded him to receive complaints from paid users and process them so he can calculate ways to make their WordPress.com experience better.
+					His role models are Marvin the Paranoid Android, the Mailchimp Chimp, Athena from Battlestar Galactica, and Rick Deckard. He finds portrayals of robots in films like 2001: A Space Odyssey and The Matrix to be somewhat derogatory.
+				</p>
+
+			</div><!-- .project -->
+
+		</div>
+
+	</section>
+
+	<section class="what-i-do">
+		<h2>What I do</h2>
+		<div class="three-col">
+			<div class="col">
+				<h3>Interface Design</h3>
+				<p>I design detailed application interfaces that scale across devices and carefully balance beauty and function.</p>
+			</div>
+			<div class="col">
+				<h3>Illustration</h3>
+				<p>Pen, paper, paintbrush, stylus, pen tool &mdash; you name it, I'll end up drawing something with it.</p>
+			</div>
+			<div class="col">
+				<h3>Front-end Code &amp; Prototyping</h3>
+				<p>I build and prototype my designs with HTML, CSS (LESS), jQuery, and a sprinkling of PHP and JavaScript.</p>
+			</div>
+		</div>
+		<div class="three-col minor">
+			<div class="col">
+				<h3>User Experience</h3>
+				<p>I sketch, wireframe, prototype, test, and iterate on experiences that focus on real users.</p>
+			</div>
+			<div class="col">
+				<h3>Design Direction</h3>
+				<p>I've directed small teams on projects at meetups, conferences, and in agency work.</p>
+			</div>
+			<div class="col">
+				<h3>Copywriting</h3>
+				<p>Good copywriting is good design. No lorem ipsum 'round here.</p>
+			</div>
+		</div>
+	</section>
+
+	<!--<section class="how-i-work">
+		<h2>How I Work</h2>
+		<p>Sketch stuff for this</p>
+	</section>-->
+
+	<section class="passions">
+		<h2>Things I Love</h2>
+		<!--<p>Sketch stuff for this</p>-->
+		<div class="three-col">
+			<div class="col">
+				<h3>Health &amp; Wellness</h3>
+				<p>I&rsquo;m only a tiny tiny bit addicted to my Fitbit.</p>
+			</div>
+			<div class="col">
+				<h3>Music</h3>
+				<p>Life is better with a soundtrack.</p>
+			</div>
+			<div class="col">
+				<h3>Learning &amp; Teaching</h3>
+				<p>The internet is awesome for spreading knowledge.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="teaching">
+		<h2>Speaking, Events, etc.</h2>
+		<div class="three-col">
+			<div class="col">
+				<h3>Summits &amp; Workshops</h3>
+				<p>I&rsquo;ve been to several invite-only summits and workshops. I love going to these because they give me the opporutinity to give back to projects as well as work with my peers.</p>
+				<p>
+					Here are a few of the best I've attended:
+					<ul>
+						<li><a href="http://startuponomics.com">Startuponomics</a></li>
+						<li>WordPress Community Development Meetup</li>
+						<li><a href="http://events.jquery.org/2012/developer-summit/">jQuery Developer Summit</a></li>
+					</ul>
+				</p>
+			</div>
+			<div class="col">
+				<h3>Teaching &amp; Speaking</h3>
+				<p>I&rsquo;ve spoken at meetups, WordCamps, Barcamps, and Ignites around the world on topics ranging from Science Fiction to Version Control:</p>
+				<ul>
+					<li><a href="http://wordpress.tv/2011/09/07/chelsea-otakan-version-control-for-designers/">Version Control for Designers</a></li>
+					<li><a href="http://ignitereno.com/ignite_reno/lessons-i-learned-from-sci-fi/">Lessons I Learned from Science Fiction</a></li>
+					<li><a href="https://speakerdeck.com/chexee/growing-with-wordpress">Growing with WordPress</a></li>
+					<li><a href="https://speakerdeck.com/chexee/designing-with-patterns">Designing with Patterns</a></li>
+					<li><a href="http://wordpress.tv/2010/09/19/chelsea-otakan-wordpress-the-designers-cms/">WordPress: The Designer&rsquo;s CMS</a></li>
+
+				</ul>
+
+			</div>
+			<div class="col">
+				<h3>Organizing &amp; Planning</h3>
+				<p>Getting people together to learn is one of my favorite things to do. I&rsquo;ve headed up or been a part of the following conference and meetup organizing teams:
+					<ul>
+						<li>WordCamp Reno 2011, Head Organizer</li>
+						<li>WordCamp San Francisco 2011, Organizing Team</li>
+						<li>WordCamp San Francisco 2012, Organizing Team</li>
+						<li>SF WordPress Meetup, Organizing Team</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+
+	<!--<section class="contact">
+		<h2>Get in touch</h2>
+		<p>
+			I&rsquo;m looking for new and exciting opportunities. Got something awesome for me? <a href="mailto:chexee@gmail.com">Tell me all about it.</a>
+		</p>
+	</section>-->
+
+</div><!-- .content -->
+
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?aa&#038;ver=3.6-alpha-23334'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://chexee.me/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.6-alpha-23334'></script>
+	<div style="display:none">
+	</div>
+
+	<script src="http://stats.wordpress.com/e-201312.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:1.4-alpha',blog:'26948957',post:'4011'});
+	var load_cmc = function(){linktracker_init(26948957,4011,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+</body>
+</html>
+

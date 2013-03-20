@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
@@ -44,3 +45,9 @@ The master and gh-pages branch do not share the same ancestry. Please treat them
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+=======
+arungm29.github.com
+===================
+
+My blog, hosted by GitHub Pages, powered by Jekyll.
+>>>>>>> daa841345a52a48c1bcb59bf500cbea85f56966c
