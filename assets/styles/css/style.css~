@@ -1,3 +1,12 @@
+/*
+Theme Name:     Chexee.me Portfolio
+Theme URI:      http://chexee.me
+Description:    Portfolio theme for Chexee.me
+Author:         Chexee
+Author URI:     http://chexee.me
+Template:       twentyeleven
+Version:        0.1.0
+*/
 /* Colors
 ============================= */
 body {
@@ -12,7 +21,7 @@ body,
 div,
 content,
 p {
-  font-family: 'adelle-sans', Helvetica, sans-serif;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -130,6 +139,8 @@ figure img {
   padding: 30px 0 15px 115px;
   position: relative;
   left: 0px;
+  background: url(images/chexee-logo.png) 20px 30px no-repeat;
+  background-size: 66px 66px;
 }
 .content .lede h1 a {
   border: 0;
@@ -146,12 +157,7 @@ figure img {
   color: #5e477d;
   font-weight: 100;
 }
-.content .lede .me {
-  display: inline-block;
-  margin-left: 12px;
-  padding-left: 53px;
-  background: url('images/chelsea-otakan.png') 0 4px no-repeat;
-}
+
 .content .contact.top {
   border: 0;
   background: #5e477d;
@@ -185,3 +191,91 @@ figure img {
   margin: 50px auto;
   max-width: 100%;
 }
+/* Display HTML5 elements normally in older browsers */
+section,
+footer,
+header {
+  clear: both;
+  display: block;
+}
+/* Clearfix */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Grid Values */
+.three-col {
+  clear: both;
+}
+.three-col:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.three-col .col {
+  float: left;
+  margin: 0 0 0 3.125%;
+  width: 31.25%;
+}
+.three-col .col:first-child {
+  margin: 0;
+}
+.minor {
+  opacity: 0.9;
+}
+.minor h3 {
+  font-weight: bold;
+  font-size: 0.95em;
+}
+.minor p {
+  font-size: 0.9em;
+}
+
+@media all and (max-width: 1000px) {
+  .content section {
+    padding: 0 30px 40px 30px;
+  }
+  .work .project .project-meta {
+    margin: 0 0 20px 0;
+  }
+  .work .project h3 {
+    margin: 0 0 20px 0;
+  }
+  .work .project .lede {
+    padding: 0;
+    margin: 40px 0;
+  }
+  .content .contact.top {
+    padding: 20px;
+  }
+}
+@media all and (max-width: 600px) {
+  .content .align-left,
+  .content .align-right {
+    float: none;
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .work .project .three-col div,
+  .work .project .three-col li {
+    float: none;
+    clear: both;
+    margin: 0;
+    width: 100%;
+  }
+  .content .lede h1 {
+    font-size: 24px;
+  }
+  .content .lede h1 .me {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  .content .work .project .lede p,
+  .content .work .project .lede.single {
+    margin: 30px;
+  }
+}
+
