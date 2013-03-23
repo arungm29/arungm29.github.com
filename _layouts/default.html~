@@ -20,9 +20,7 @@
 	<link rel='canonical' href='http://arungm29.github.com/' />
 
 
-	<!-- Include Typekit -->
-	<script type="text/javascript" src="//use.typekit.net/kby0nrq.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -41,7 +39,38 @@
 			<a href="https://github.com/arungm29">GitHub</a>,
 			<a href="http://facebook.com/arun.mahadevan1">Facebook</a> and
 			<a href="http://arunmahadevan.wordpress.com">WordPress.com</a>.
+		</p>
 	</section>
+	<section class="what-i-do">
+		<h2>What I Do</h2>
+		<div class="three-col">
+			<div class="col">
+				<h3>Front-end Development/UX Design</h3>
+				<ul class="project-meta">
+					<li><strong>Tools:</strong> HTML5, CSS3, Javascript</li>
+				</ul>
+
+				<p>I focus on writing clean, efficient and elegant code. I am a minimalist, and believe that less is more. These days, I have been experimenting with tools like Modernizr, and the HTML5 Boilerplate.</p>
+			</div>
+			<div class="col">
+				<h3>Back-end Development</h3>
+				<ul class="project-meta">
+					<li><strong>Tools:</strong> PHP, MySQL, Python</li>
+				</ul>
+				<p>After a year of coding with PHP and MySQL, I have now started experimenting with frameworks, especially Django. I have also coded with Python and Google App Engine, thanks to CS 253 on Udacity.</p>
+			</div>
+			<div class="col">
+				<h3>Learning</h3>
+				<ul class="project-meta">
+					<li></li>
+					<br>
+				</ul>
+
+				<p>The internet is awesome for learning and spreading knowledge. I spend a lot of time doing courses on Codecademy, Coursera and Udacity.</p>
+			</div>
+		</div>
+	</section>
+	
 </div>
 </body>
 </html>
