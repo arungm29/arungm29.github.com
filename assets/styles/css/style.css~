@@ -81,10 +81,9 @@ ul li {
   border-top: 1px #d7d1e1 solid;
 }
 #footer {
-  background-color: #1d1d1d;
+  background-color: #2d2d2d;
   color: #dcdcdc;
   font-size: 0.6em;
-  border-top: 2px solid #f56252;
   padding-top: 200px;
 }
 /* Layout
