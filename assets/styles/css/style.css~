@@ -80,7 +80,13 @@ ul li {
   list-style: none;
   border-top: 1px #d7d1e1 solid;
 }
-
+#footer {
+  background-color: #1d1d1d;
+  color: #dcdcdc;
+  font-size: 0.6em;
+  border-top: 5px solid #f56252;
+  padding-top: 200px;
+}
 /* Layout
 ============================= */
 .content {
@@ -125,6 +131,23 @@ ul li {
 .content .lede strong {
   color: #5e477d;
   font-weight: 100;
+}
+/* Grid Values */
+.three-col {
+  clear: both;
+}
+.three-col:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.three-col .col {
+  float: left;
+  margin: 0 0 0 3.125%;
+  width: 31.25%;
+}
+.three-col .col:first-child {
+  margin: 0;
 }
 
 /* Display HTML5 elements normally in older browsers */
