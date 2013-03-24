@@ -78,13 +78,101 @@ ul li {
   padding: 6px 0;
   font-size: 14px;
   list-style: none;
-  border-top: 1px #d7d1e1 solid;
 }
 #footer {
-  background-color: #3d3d3d;
+  background-color: #2e2e2e;
   color: #dcdcdc;
   font-size: 0.6em;
-  padding-top: 200px;
+  
+}
+
+.clear {
+  clear: both; }
+
+#footer a {
+  color: #fff;
+  font-weight: bold; }
+
+.section {
+  background-size: cover;
+  background-position: center center;
+  display: block; }
+
+.section h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.section h2.heading2 {
+  text-transform: none; }
+
+.section h2 a {
+  line-height: 40px; }
+
+.section .subtext {
+  font-size: 0.8em;
+  color: #6d6d6d;
+  font-family: "Minion Pro", Minion, Georgia, "Times New Roman", serif;
+  font-style: italic;
+  overflow: auto;
+ }
+.container {
+  width: 992px;
+  /*
+  font-size: 1.313em;
+  line-height: 1.524em;
+  */
+  margin: 0 auto;
+  font-size: 1.113em;
+  line-height: 1.324em;
+   }
+
+.footer-top {
+  padding-top: 20px; }
+
+.grid_1by3 {
+  width: 310px;
+   }
+
+.column {
+    margin: 0 10px;
+    float: left;
+    display: inline;
+    font-family: Helvetica, sans-serif;
+    text-shadow: none; }
+
+ul#big-links li {
+  display: block;
+  height: 60px;
+  margin-bottom: 20px; }
+
+ul#big-links li a {
+  display: block;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 60px;
+  background-color: #3e3e3e; }
+
+ul#big-links li a:hover {
+  background-color: #4d4d4d;
+  text-decoration: none; }
+
+.grid_1by3 h2 {
+  display: block;
+  height: 60px;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 60px;
+  color: white;
+  margin: 0;
+}
+
+.grid_1by3 .footer-msg p{
+  font-family: Helvetica, sans-serif;
+  text-shadow: none;
+  color: gainsboro;
 }
 /* Layout
 ============================= */
@@ -148,6 +236,8 @@ ul li {
 .three-col .col:first-child {
   margin: 0;
 }
+
+
 
 /* Display HTML5 elements normally in older browsers */
 section,
