@@ -175,22 +175,15 @@ ul#big-links li a:hover {
   color: gainsboro;
 }
 
-.grid_1by3 .footer-msg span {
-color:#b76363;
-	text-indent:-9999px;
-	font-size:1px;
-	display:block;
-	background:url(/assets/images/love.png) center no-repeat;
-	float:left;
-	width:16px;
-	height:13px;
-	margin:4px 5px 0;
+.social {
+  opacity: 0.8;
 }
 
-.left
-{
-	float: left;
+.social:hover {
+  opacity: 1;
 }
+
+
 /* Layout
 ============================= */
 .content {
