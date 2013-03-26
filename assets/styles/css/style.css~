@@ -651,7 +651,7 @@ vertical-align: top;
 
 
 .posts ul li:last-child, .posts ul li:nth-last-child(2) {border-bottom: solid 1px #e6e6e6;}
-.date {
+.date, .category {
 margin-top: 0;
 margin-bottom: 1em;
 font-variant: normal;

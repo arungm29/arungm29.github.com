@@ -307,16 +307,6 @@ dt
 
 dt:first-child { margin-top:0 }
 
-dd
-{
-	background:#efefef;
-	background: -moz-linear-gradient(center top, rgba(0, 0, 0, 0.2), transparent 10%) repeat scroll 0 0 #EFEFEF;
-	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 1px rgba(255, 255, 255, 0.6);
-	height: 0.7em;
-	padding: 0;
-	width: 100%;
-}
 
 dd > p
 {
