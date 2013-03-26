@@ -51,18 +51,7 @@
 		</header>
 		
 		<section>
-			<article class="posts">
-				<h2>Recent posts</h2>
-				<p>I frequently post about what I am currently working on. See my post recent posts below, or check out the <a href=#>Archives</a>.</p>
-				<ul>
-					<li>
-						
-					</li>
-					<li>
-						
-					</li>
-				</ul>
-			</article>
+			{{content}}
 			
 			
 		</section>
@@ -76,7 +65,7 @@
 			</div>
 			<div class="copyright">
 				<p class="left">All content <a href="/">&copy;Arun Mahadevan</a> - unless otherwise stated.</p>
-				<p class="right"><a href="//github.com/arungm29/">GitHub</a> - <a href="//twitter.com/arungm29">Twitter</a></p>
+				<p class="right"><a href="//github.com/arungm29/">GitHub</a> - <a href="//twitter.com/ArunMahadevan">Twitter</a></p>
 			</div>		
 		</footer>
 		

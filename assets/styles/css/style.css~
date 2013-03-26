@@ -227,7 +227,7 @@ header
 header > nav > ul 		{ width: 100%; overflow: hidden; }
 header > nav > ul > li 	{ width: 50%; float: left; display: inline-block; } 
 
-header > h1 	{ text-align: center; margin-top: 1.5em; clear:both}
+header > h1 	{ text-align: center; padding-top: 1.5em; clear:both}
 header > p  	{ text-align: center; color: #666; }
 header > p > a{ border-bottom: 1px dashed #999; }
 header > p > a:hover	{border-bottom: 1px solid #999;}
@@ -651,7 +651,14 @@ vertical-align: top;
 
 
 .posts ul li:last-child, .posts ul li:nth-last-child(2) {border-bottom: solid 1px #e6e6e6;}
+.date {
+margin-top: 0;
+margin-bottom: 1em;
+font-variant: normal;
 
+text-transform: none;
+color: rgba(0,0,0,0.5);
+}
 
 div.content hgroup h4 { font-weight:normal; margin-bottom:0; color:#690 }
 div.content hgroup h4 > a {color:#690} 
@@ -664,10 +671,6 @@ text-transform: none;
 color: rgba(0,0,0,0.5);
 }
 div.content hgroup > p > a { margin-left:.5em; font-size:90%;}
-div.content hgroup > p:before {
-	content:"â†’";
-
-	}
 
 div.content > p{ margin-top:0; }
 
