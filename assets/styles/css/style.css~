@@ -233,13 +233,13 @@ header
 header > nav > ul 		{ width: 100%; overflow: hidden; }
 header > nav > ul > li 	{ width: 50%; float: left; display: inline-block; } 
 
-header > h1 	{ text-align: center; padding-top: 1.5em; clear:both}
+header > h1 	{ text-align: center; padding-top: 1.5em; clear:both; color: #00182e}
 header > p  	{ text-align: center; color: #666; }
 header > p > a{ border-bottom: 1px dashed #999; }
 header > p > a:hover	{border-bottom: 1px solid #999;}
 
 .logo 			{ font-size:150%; text-decoration:none; color:#333; line-height:1.5; opacity:.8; float:left;} .logo:hover { opacity:1}
-.bar			{ display:inline; font-size:150%; text-decoration:none; color:#690; line-height:1.5; opacity:.8; margin-left:2em; float:right} .bar:hover { opacity:1}
+.bar			{ display:inline; font-size:150%; text-decoration:none; color:#ff7500; line-height:1.5; opacity:.8; margin-left:2em; float:right} .bar:hover { opacity:1}
 
 .left {float:left; }
 .right {float:right}
@@ -271,7 +271,7 @@ p > a:hover
 
 	border-bottom: 1px solid #aaa;
 	color: #000;
-	background-color:#fc3;
+	background-color:#d4d6d4;
 }
 
 
@@ -309,7 +309,6 @@ dl
 
 dt
 {
-	margin: 1.5em 0 0 0;
 	line-height: 1.5em
 }
 
@@ -720,7 +719,7 @@ transition: all 0.4s ease;
 }
 .contact
 {
-	background-color:#690;
+	background-color:#0c6ba1;
 	padding:2.5em 8.5% 1em;	
 
 	color:#000;	
