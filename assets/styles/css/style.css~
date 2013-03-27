@@ -33,14 +33,20 @@ img
 }
 /* Font Face Rule */
 @font-face {
-    font-family: "chaparral-pro";
-    src: url("/assets/fonts/ChaparralPro-Regular.otf");
+	font-family: 'chaparral-pro';
+	src: url('/assets/fonts/ChaparralPro-Regular.eot');
+	src: local('☺'), url('/assets/fonts/ChaparralPro-Regular.woff') format('woff'), url('/assets/fonts/ChaparralPro-Regular.ttf') format('truetype'), url('/assets/fonts/ChaparralPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
 @font-face {
-    font-family: "chaparral-pro";
-    src: url("/assets/fonts/ChaparralPro-Bold.otf");
-    font-weight: bold;
+	font-family: 'chaparral-pro';
+	src: url('/assets/fonts/ChaparralPro-Bold.eot');
+	src: local('☺'), url('/assets/fonts/ChaparralPro-Bold.woff') format('woff'), url('/assets/fonts/ChaparralPro-Bold.ttf') format('truetype'), url('/assets/fonts/ChaparralPro-Bold.svg') format('svg');
+	font-weight: bold;
 }
+
 /* Remove default fieldset styles. */
 
 fieldset
@@ -235,8 +241,10 @@ header > p > a:hover	{border-bottom: 1px solid #999;}
 .logo 			{ font-size:150%; text-decoration:none; color:#333; line-height:1.5; opacity:.8; float:left;} .logo:hover { opacity:1}
 .bar			{ display:inline; font-size:150%; text-decoration:none; color:#690; line-height:1.5; opacity:.8; margin-left:2em; float:right} .bar:hover { opacity:1}
 
-.left {float:left}
+.left {float:left; }
 .right {float:right}
+
+.split{text-align:right;list-style:none;margin-left:0}.split__title{text-align:left;float:left;clear:left}
 
 /* Section styles */
 
@@ -623,7 +631,7 @@ padding: 0 10px;
 background:#fff;
 }
 
-.twitter-follow-button { margin-top:.5em;}
+
 
 .posts ul { margin-top:3em; }
 .posts ul li 
@@ -679,44 +687,6 @@ border-top: 1px solid #E3E5E4;
 
 h4 { font-weight:normal; color:#f80}
 
-
-
-
-
-.books {		padding:1em 8.5% 1em;
-}
-.books ul {
-	margin-top:2.5em;
-overflow: hidden;
-
-}
-
-.books li {
-	
-width: 46.5%;
-overflow: hidden;
-float: left;
-padding-right: 3.5%;
-position: relative;
-margin-bottom:1.5em;
-}
-
-.books li:nth-child(even) {padding-right: 0%; margin-left:3.5%; float:right}
-
-.books li img {
-width: 7em;
-height: 9em;
-margin-right: 4%;
-margin-bottom: 1em;
-float: left;
-background-color:#333;
-border:5px solid #fff;
--webkit-box-shadow: 0 1px 5px black;
--moz-box-shadow: 0 1px 5px black;
-box-shadow: 0 1px 5px black;
-}
-
-.books li h4 { margin-bottom:0.5em; border-bottom:1px solid #ccc; font-size:1em; padding-bottom:.25em; line-height:1.25;}
 
 
 
