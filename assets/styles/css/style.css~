@@ -240,7 +240,23 @@ header > p > a:hover	{border-bottom: 1px solid #999;}
 
 .logo 			{ font-size:150%; text-decoration:none; color:#333; line-height:1.5; opacity:.8; float:left;} .logo:hover { opacity:1}
 .bar			{ display:inline; font-size:150%; text-decoration:none; color:#ff7500; line-height:1.5; opacity:.8; margin-left:2em; float:right} .bar:hover { opacity:1}
+dl dt a {
+border-bottom: 1px dashed #999;
+	color: #09c;
+	text-decoration: none;
+	
+	    -webkit-transition: all .3s ease-in-out 0;
+       -moz-transition: all .3s ease-in-out 0;
+            transition: all .3s ease-in-out 0;
+}
+dl dt a:hover	{border-bottom: 1px solid #999;
+-webkit-transition: all .3s ease-in-out 0;
+       -moz-transition: all .3s ease-in-out 0;
+            transition: all .3s ease-in-out 0;
 
+	border-bottom: 1px solid #aaa;
+	color: #000;
+	background-color:#d4d6d4;}
 .left {float:left; }
 .right {float:right}
 
@@ -644,7 +660,7 @@ padding-top: 1em;
 vertical-align: top;
 }
 
-.posts ul li:nth-child(even) {border-left: solid 1px #e6e6e6; padding-left:1.2em; }
+.posts ul li:nth-child(even) {padding-left:1.2em; }
 
 
 .posts ul li:last-child, .posts ul li:nth-last-child(2) {border-bottom: solid 1px #e6e6e6;}
@@ -673,7 +689,6 @@ div.content > p{ margin-top:0; }
 
 .posts ul li:hover:nth-child(even) {
 background: #F9FAFA;
-border-left: 1px solid #E3E5E4;
 border-top: 1px solid #E3E5E4;
 
 }
@@ -722,14 +737,14 @@ transition: all 0.4s ease;
 	background-color:#0c6ba1;
 	padding:2.5em 8.5% 1em;	
 
-	color:#000;	
+	color:#d4d6d4;	
 	overflow-x:hidden;
 }
 
 .copyright
 {
 	background-color:#00182e;
-	color:#000;
+	color:#d4d6d4;
 		padding:1em 8.5% 1em;
 	box-shadow: inset 0 0px 5px rgba(0,0,0,0.5);
 	overflow-x:hidden;
