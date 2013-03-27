@@ -167,6 +167,7 @@ body
 {
 	color: #00182e;
 	font-family: "chaparral-pro", Georgia, serif;
+	background-image: url('/assets/images/white-wall-hash.png');
 
 	min-width: 320px;
 	max-width: 1980px;
@@ -234,7 +235,7 @@ header > nav > ul 		{ width: 100%; overflow: hidden; }
 header > nav > ul > li 	{ width: 50%; float: left; display: inline-block; } 
 
 header > h1 	{ text-align: center; padding-top: 1.5em; clear:both; color: #00182e}
-header > p  	{ text-align: center; color: #a9aea9; }
+header > p  	{ text-align: center; color: #8c938c; }
 header > p > a{ border-bottom: 1px dashed #999; }
 header > p > a:hover	{border-bottom: 1px solid #999;}
 
