@@ -165,7 +165,7 @@ dd, dt, li
 
 body
 {
-	color: #333;
+	color: #00182e;
 	font-family: "chaparral-pro", Georgia, serif;
 
 	min-width: 320px;
@@ -234,7 +234,7 @@ header > nav > ul 		{ width: 100%; overflow: hidden; }
 header > nav > ul > li 	{ width: 50%; float: left; display: inline-block; } 
 
 header > h1 	{ text-align: center; padding-top: 1.5em; clear:both; color: #00182e}
-header > p  	{ text-align: center; color: #666; }
+header > p  	{ text-align: center; color: #d4d6d4; }
 header > p > a{ border-bottom: 1px dashed #999; }
 header > p > a:hover	{border-bottom: 1px solid #999;}
 
@@ -658,7 +658,7 @@ color: rgba(0,0,0,0.5);
 }
 
 div.content hgroup h4 { font-weight:normal; margin-bottom:0; color:#690 }
-div.content hgroup h4 > a {color:#690} 
+div.content hgroup h4 > a {color:#ff7500} 
 div.content hgroup > p {
 margin-top: 0;
 margin-bottom: 1em;
