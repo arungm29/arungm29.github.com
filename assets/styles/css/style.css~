@@ -9,8 +9,8 @@
 
 /* Styles for the default text selection color. */
 
-::-moz-selection { background: #690; color: #000; text-shadow: none; }
-     ::selection { background: #690; color: #000; text-shadow: none; }
+::-moz-selection { background: #ff7500; color: #000; text-shadow: none; }
+     ::selection { background: #ff7500; color: #000; text-shadow: none; }
 	 
 /* A better looking default horizontal rule. */
 
