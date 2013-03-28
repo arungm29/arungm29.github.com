@@ -112,6 +112,7 @@ h3
 	font-size: 1.5em;
 	line-height: 1;
 	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 h4
@@ -257,7 +258,7 @@ dl dt a:hover	{border-bottom: 1px solid #999;
 	border-bottom: 1px solid #aaa;
 	color: #000;
 	background-color:#d4d6d4;}
-.left {float:left; margin-top:-1em}
+.left {float:left;margin-bottom:-2em; margin-top:-1em}
 .right {float:right}
 
 .split{text-align:right;list-style:none;margin-left:0}.split__title{text-align:left;float:left;clear:left}
