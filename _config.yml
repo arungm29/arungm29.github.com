@@ -15,3 +15,7 @@ author:
  github: "arungm29"
  twitter: "ArunMahadevan"
  facebook: "arun.mahadevan1"
+comments :
+  provider : disqus
+  disqus :
+    short_name : arunmahadevan
