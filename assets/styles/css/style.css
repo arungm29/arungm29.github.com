@@ -28,7 +28,7 @@ hr
 
 img
 {
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 }
 /* Font Face Rule */
 @font-face {
@@ -238,7 +238,8 @@ header > p  	{ text-align: center; color: #8c938c; }
 header > p > a{ border-bottom: 1px dashed #999; }
 header > p > a:hover	{border-bottom: 1px solid #999;}
 
-.logo 			{ font-size:150%; text-decoration:none; color:#333; line-height:1.5; opacity:.8; float:left;} .logo:hover { opacity:1}
+.logo 			{ opacity:.8; float:left;} .logo:hover { opacity:1}
+.img {}
 .bar			{ display:inline; font-size:150%; text-decoration:none; color:#ff7500; line-height:1.5; opacity:.8; margin-left:2em; float:right} .bar:hover { opacity:1}
 dl dt a {
 border-bottom: 1px dashed #999;
@@ -256,7 +257,7 @@ dl dt a:hover	{border-bottom: 1px solid #999;
 	border-bottom: 1px solid #aaa;
 	color: #000;
 	background-color:#d4d6d4;}
-.left {float:left; }
+.left {float:left; margin-top:-1em}
 .right {float:right}
 
 .split{text-align:right;list-style:none;margin-left:0}.split__title{text-align:left;float:left;clear:left}
