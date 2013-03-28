@@ -4,4 +4,5 @@ layout: comments
 
 <h2>{{ page.title }}</h2>
 <div class="meta">Posted on <date class="date">{{ page.date | date_to_long_string }}</date><br/>Under <span class="category">{{ page.category }}</a>{% if page.tags != empty %}<br/>Tagged </span><span class="tags">{{ page.tags | array_to_sentence_string }}</span>{% endif %}</div>
-<p>{{ content }}</p>
+<br>
+{{ content }}

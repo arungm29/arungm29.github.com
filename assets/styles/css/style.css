@@ -291,31 +291,6 @@ p > a:hover
 }
 
 
-/* Writeup & Skills section */
-
-.writes > ul, .skills > ul { overflow: hidden }
-
-.writes > ul > li, .skills > ul > li
-{
-	width: 50%;
-	overflow: hidden;
-	float: left;
-	padding-right: 3.33333%;
-	padding-bottom:0;
-	position: relative;
-}
-
-.writes > ul> li > h4 { margin: .5em 0 1em 0 }
-.skills > ul > li:nth-child(even), .writes > ul > li:nth-child(even) {
-padding-left: 3%;
-padding-right: 0;
-}
-
-.skills > ul > li { margin:1em 0 0 }
-
-.skills > ul > li:last-child { margin:1em 0 }
-
-.skills > ul > li > h4 { margin: 0 0 1em; }
 
 dl
 {
@@ -356,46 +331,6 @@ code
 	padding: .1em;
 }
 
-/* Colophon section. */
-
-.colophon > ul > li > h4
-{
-	margin-bottom: 0;
-	font-weight:normal;
-	color:#EC2125;
-}
-
-.colophon > ul
-{
-	overflow:hidden;
-	font-size:60%;
-	margin:0em 0 2.5em;
-	width:100%;
-}
-
-.colophon > ul > li
-{
-	display:inline;
-	width: 25%;
-	margin-right: 0%;
-	float: left;
-	margin-top:1.5em;
-}
-.colophon > ul > li:nth-child(4n+4), .colophon > ul > li:nth-child(4n+3) {
-margin-left: 0%;
-text-align:right;
-margin-right:0 !important
-}
-.colophon > ul > li:nth-child(4n+4) > p, .colophon > ul > li:nth-child(4n+3) > p {
-text-align:right;
-margin-right:0 !important
-}
-.colophon > ul > li:nth-child(4n+3) {
-padding-right:5%;
-}
-.colophon > ul > li:nth-child(4n+2) {
-padding-left:5%;
-}
 
 /* Footer */
 
@@ -445,71 +380,7 @@ a:link
 	tap-highlight-color: hsl(32, 100%, 50%, .5);
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
-/*
- * Image replacement
- */
-
-.ir
-{
-	background-color: transparent;
-	border: 0;
-	overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before
-{
-	content: "";
-	display: block;
-	width: 0;
-	height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden
-{
-	display: none !important;
-	visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden
-{
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus
-{
-	clip: auto;
-	height: auto;
-	margin: 0;
-	overflow: visible;
-	position: static;
-	width: auto;
-}
 
 /*
  * Hide visually and from screenreaders, but maintain layout
@@ -705,33 +576,8 @@ h4 { font-weight:normal; color:#f80}
 
 
 
-.top:hover {
-background-position: center -100px;
--moz-transition: all 0.3s ease;
--webkit-transition: all 0.3s ease;
-transition: all 0.3s ease;
-}
 
-.top {
-z-index:100;
-width: 70px;
-height: 70px;
-position:absolute;
-margin-top:-3.5em;
-background:#fff;
-right:8.33333%;
-text-indent:-9999em;
-cursor: pointer;
-border-radius: 50%;
-padding-bottom:1em;
-border:1px thin #000;
-background-image: url(../img/up.png);
-background-repeat: no-repeat, repeat;
-background-position: center 10px, left top;
--moz-transition: all 0.4s ease;
--webkit-transition: all 0.4s ease;
-transition: all 0.4s ease;
-}
+
 .contact
 {
 	background-color:#0c6ba1;
@@ -760,14 +606,6 @@ transition: all 0.4s ease;
 
 
 
-
-.wf-loading {
-  /* styles to use before Typekit is loaded */
-}
- 
-.wf-active {
-  /* styles to use after Typekit is loaded */
-}
 
 
 
@@ -806,35 +644,13 @@ input::-moz-focus-inner { border: 0; }
 	header h1 { font-size:2.5em !important;}
 	article > ul > li { width:100% !important}
 	.posts ul > li { border-left:none !important; padding-left:.5em !important;}
-	.books li { width: 100%}
 	
-	.skills li { padding-left:0 !important; padding-right:0 !important; }
-	.skills > ul > li:nth-child(even), .writes > ul > li:nth-child(even) { padding-left:0 !important; padding-right:0 !important}
 
 	dd { height:.85em;}
 	.left { width:100%; text-align:center;margin-bottom:.5em;bottom:0;position:relative}
 	.right{width:100%; text-align:center;top:0;position:relative}
 	
 	footer{	margin:1.5em -1em 0em !important; padding-left:0 !important; padding-right:0 !important}
-	.books, .contact, .copyright {	padding-left:.5em; padding-right:.5em;	}
+	.contact, .copyright {	padding-left:.5em; padding-right:.5em;	}
 }
- 
-/* ==============
-   Awards section
-   ============== */
 
-.opl 	{ position: fixed; top: 25%; left: 0; z-index: 99999; }
-.opl a 	{ width: 73px; height: 56px; text-indent: -9999px; display: block; background: url('../img/awards/one-page-love-award.png') no-repeat; }
-
-
-.books li img:hover {
-
--webkit-transition: 1.5s ease-in;
--moz-transition: 1.5s ease-in;
--o-transition: 1.5s ease-in;
-transition: 1.5s ease-in;
-
-filter: gray;
--webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
-}
