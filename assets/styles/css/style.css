@@ -598,7 +598,7 @@ h4 { font-weight:normal; color:#f80}
 }
 
 
-.left 	{ width: auto; float: left; }
+.lft 	{ width: auto; float: left; }
 .right 	{ width: auto; float: right; }
 
 .contact a, .copyright a { color:#fff; border-bottom:none}

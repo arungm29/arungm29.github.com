@@ -39,7 +39,7 @@
 		<header>
 			<nav>
 				<ul class="left">
-					<li><a href="/" class="logo" title="Arun Mahadevan"><img src = '/assets/images/logo.png' class="img" alt="Arun Mahadevan" height=100em /></a></li>
+					<li class="img"><a href="/" class="logo" title="Arun Mahadevan"><img src = '/assets/images/logo.png' alt="Arun Mahadevan" height=100em /></a></li>
 				</ul>
 				<ul class="right">
 					<li><a class="bar" href="/">Home</a></li>

@@ -112,6 +112,7 @@ h3
 	font-size: 1.5em;
 	line-height: 1;
 	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 h4
@@ -597,7 +598,7 @@ h4 { font-weight:normal; color:#f80}
 }
 
 
-.left 	{ width: auto; float: left; }
+.lft 	{ width: auto; float: left; }
 .right 	{ width: auto; float: right; }
 
 .contact a, .copyright a { color:#fff; border-bottom:none}
