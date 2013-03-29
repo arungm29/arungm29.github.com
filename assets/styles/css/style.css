@@ -258,7 +258,7 @@ dl dt a:hover	{border-bottom: 1px solid #999;
 	border-bottom: 1px solid #aaa;
 	color: #000;
 	background-color:#d4d6d4;}
-.left {float:left;margin-bottom:-2em; margin-top:-1em}
+.left {float:left;margin-bottom:-3.5em; margin-top:-1em}
 .right {float:right}
 
 .split{text-align:right;list-style:none;margin-left:0}.split__title{text-align:left;float:left;clear:left}
@@ -648,7 +648,7 @@ input::-moz-focus-inner { border: 0; }
 	
 
 	dd { height:.85em;}
-	.left { width:100%; text-align:center;margin-bottom:.5em;bottom:0;position:relative}
+	
 	.right{width:100%; text-align:center;top:0;position:relative}
 	
 	footer{	margin:1.5em -1em 0em !important; padding-left:0 !important; padding-right:0 !important}
