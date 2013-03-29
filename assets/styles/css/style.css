@@ -34,7 +34,7 @@ img
 @font-face {
 	font-family: 'chaparral-pro';
 	src: url('/assets/fonts/ChaparralPro-Regular.eot');
-	src: local('☺'), url('/assets/fonts/ChaparralPro-Regular.woff') format('woff'), url('/assets/fonts/ChaparralPro-Regular.ttf') format('truetype'), url('/assets/fonts/ChaparralPro-Regular.svg') format('svg');
+	src: url('/assets/fonts/ChaparralPro-Regular.svg') format('svg'), url('/assets/fonts/ChaparralPro-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -42,7 +42,7 @@ img
 @font-face {
 	font-family: 'chaparral-pro';
 	src: url('/assets/fonts/ChaparralPro-Bold.eot');
-	src: local('☺'), url('/assets/fonts/ChaparralPro-Bold.woff') format('woff'), url('/assets/fonts/ChaparralPro-Bold.ttf') format('truetype'), url('/assets/fonts/ChaparralPro-Bold.svg') format('svg');
+	src: url('/assets/fonts/ChaparralPro-Bold.svg') format('svg'), url('/assets/fonts/ChaparralPro-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
 

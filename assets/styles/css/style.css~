@@ -34,7 +34,7 @@ img
 @font-face {
 	font-family: 'chaparral-pro';
 	src: url('/assets/fonts/ChaparralPro-Regular.eot');
-	src: local('☺'), url('/assets/fonts/ChaparralPro-Regular.woff') format('woff'), url('/assets/fonts/ChaparralPro-Regular.ttf') format('truetype'), url('/assets/fonts/ChaparralPro-Regular.svg') format('svg');
+	src: url('/assets/fonts/ChaparralPro-Regular.svg') format('svg'), url('/assets/fonts/ChaparralPro-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -42,7 +42,7 @@ img
 @font-face {
 	font-family: 'chaparral-pro';
 	src: url('/assets/fonts/ChaparralPro-Bold.eot');
-	src: local('☺'), url('/assets/fonts/ChaparralPro-Bold.woff') format('woff'), url('/assets/fonts/ChaparralPro-Bold.ttf') format('truetype'), url('/assets/fonts/ChaparralPro-Bold.svg') format('svg');
+	src: url('/assets/fonts/ChaparralPro-Bold.svg') format('svg'), url('/assets/fonts/ChaparralPro-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
 
@@ -258,7 +258,7 @@ dl dt a:hover	{border-bottom: 1px solid #999;
 	border-bottom: 1px solid #aaa;
 	color: #000;
 	background-color:#d4d6d4;}
-.left {float:left;margin-bottom:-3.5em;}
+.left {float:left;margin-bottom:-3.5em; margin-top:-1em}
 .right {float:right}
 
 .split{text-align:right;list-style:none;margin-left:0}.split__title{text-align:left;float:left;clear:left}
