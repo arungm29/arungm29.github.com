@@ -50,7 +50,7 @@
 		
 		<section>
 			{{content}}
-			
+			<h3>Comments</h3>
 			 <div id="disqus_thread"></div>
     <script type="text/javascript">
         
@@ -75,7 +75,7 @@
 				
 			</div>
 			<div class="copyright">
-				<p class="left">&copy;2013 Arun Mahadevan</p>
+				<p class="lft">&copy;2013 Arun Mahadevan</p>
 				<p class="right"><a href="//github.com/arungm29/">GitHub</a> - <a href="//twitter.com/ArunMahadevan">Twitter</a></p>
 			</div>		
 		</footer>
