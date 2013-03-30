@@ -58,11 +58,11 @@
 			
 			<div class="contact">	
 				<h2>Get in touch</h2>
-				<p>If you wish to contact me for any project, or just want to share your thoughts on my posts, say <a href="mailto:arungm29@gmail.com">hello</a>.</p>
+				<p>If you would like to get in touch, or just want to share your thoughts on my posts, say <a href="mailto:arungm29@gmail.com">hello</a>.</p>
 				
 			</div>
 			<div class="copyright">
-				<p class="left">&copy;2013 Arun Mahadevan</p>
+				<p class="lft">&copy;2013 Arun Mahadevan</p>
 				<p class="right"><a href="//github.com/arungm29/">GitHub</a> - <a href="//twitter.com/ArunMahadevan">Twitter</a></p>
 			</div>		
 		</footer>
