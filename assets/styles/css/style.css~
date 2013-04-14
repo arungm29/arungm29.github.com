@@ -326,7 +326,6 @@ dt > span
 code
 {
 	font-family: Consolas, monospace, serif;
-	background: #EEE;
 	font-size: 1em;
 	line-height: 1.6;
 	padding: .1em;
