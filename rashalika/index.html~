@@ -19,9 +19,13 @@ description: ""
 		<div id="box" style="position: relative; min-height: 100%;">
 		<div class="logitem"><p class="statuslog">Say something to Rashalika! Tell her how hot she is.</p></div></div></div></div>
 		<div class="controlwrapper" style="margin-right: 168px;">
-		<table class="controltable" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="chatmsgcell"><div class="chatmsgwrapper"><textarea id="chatmsg" cols="80" rows="3"></textarea></div></td><td class="sendbthcell"><div class="sendbtnwrapper"><button class="sendbtn">Send<div class="btnkbshortcut">Enter</div></button></div></td></tr></tbody></table>
+		<table class="controltable" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="chatmsgcell"><div class="chatmsgwrapper"><textarea id="chatmsg" cols="80" rows="3"></textarea></div></td><td class="sendbthcell"><div class="sendbtnwrapper"><button id="sendbtn">Send<div class="btnkbshortcut">Enter</div></button></div></td></tr></tbody></table>
 		</div>
 			<script type="text/javascript" >
+			$(document).ready(function() {
+ 				 $('#chatmsg').focus();
+			});
+			
 			var textArray = [
 							'hehe,. thnkuu',
 							'thnkuu  :))',
@@ -35,20 +39,54 @@ description: ""
 							'thnkuu :D',
 							'thnkuU :)) <3'
 							];
-var randomNumber = Math.floor(Math.random()*textArray.length);
-			$('textarea').keyup(function (e){
-			if (e.keyCode == 13) {
-				randomNumber = Math.floor(Math.random()*textArray.length);
+			function typing() {
+  			   document.getElementById("box").innerHTML+='<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+$('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+ 			}
+			function rashtype() {
+			$('#typing').remove();
+			   document.getElementById("box").innerHTML+='<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] +'</span></p></div>';
+$('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+			}
+			document.getElementById("sendbtn").onclick=function() {
+			if($("#chatmsg").val()=='')
+			{;}
+			else {
 				var txt = document.getElementById("chatmsg").value;
-				$('#chatmsg').val('');
+				document.getElementById("chatmsg").value = "";
+				randomNumber = Math.floor(Math.random()*textArray.length);
 				document.getElementById("box").innerHTML+='<div class="logitem"><p class="youmsg"><strong class="msgsource">You:</strong> <span>'+ txt + '</span></p></div>';
-				document.getElementById("box").innerHTML+='<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] +'</span></p></div>';
-				$(document).ready(function(){
-    $('#box').scrollTop($('#box')[0].scrollHeight);
-});
+$('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+				
+				
+ 				setTimeout(typing, 1000);
+				setTimeout(rashtype, 2000);
+			}
+		}
+
+			$('#chatmsg').keydown(function (e){
+			if($(this).val()=='' && e.keyCode == 13) {
+    				e.preventDefault();
+  			}
+			else if (e.keyCode == 13) {
+				var txt = document.getElementById("chatmsg").value;
+				
+				randomNumber = Math.floor(Math.random()*textArray.length);
+				document.getElementById("box").innerHTML+='<div class="logitem"><p class="youmsg"><strong class="msgsource">You:</strong> <span>'+ txt + '</span></p></div>';
+$('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+				
+ 				setTimeout(typing, 1000);
+				setTimeout(rashtype, 2000);
+				
 				
    }
+
 });
+			$('#chatmsg').keyup(function (e){
+			if(e.keyCode == 13) {
+				document.getElementById("chatmsg").value = "";
+			}
+		});
 		</script>
 	</body>
 </html>
