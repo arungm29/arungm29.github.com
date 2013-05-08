@@ -43,6 +43,9 @@ var randomNumber = Math.floor(Math.random()*textArray.length);
 				$('#chatmsg').val('');
 				document.getElementById("box").innerHTML+='<div class="logitem"><p class="youmsg"><strong class="msgsource">You:</strong> <span>'+ txt + '</span></p></div>';
 				document.getElementById("box").innerHTML+='<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] +'</span></p></div>';
+				$(document).ready(function(){
+    $('#box').scrollTop($('#box')[0].scrollHeight);
+});
 				
    }
 });
