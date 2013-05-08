@@ -1,0 +1,50 @@
+---
+title: "Rashalika"
+description: ""
+---
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat with Rashalika</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+	
+	</head>
+	<body>
+		<div class="logwrapper" style="top: 81px; margin-right: 168px;">
+		<div class="logbox">
+		<div id="box" style="position: relative; min-height: 100%;">
+		<div class="logitem"><p class="statuslog">Say something to Rashalika! Tell her how hot she is.</p></div></div></div></div>
+		<div class="controlwrapper" style="margin-right: 168px;">
+		<table class="controltable" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="chatmsgcell"><div class="chatmsgwrapper"><textarea id="chatmsg" cols="80" rows="3"></textarea></div></td><td class="sendbthcell"><div class="sendbtnwrapper"><button class="sendbtn">Send<div class="btnkbshortcut">Enter</div></button></div></td></tr></tbody></table>
+		</div>
+			<script type="text/javascript" >
+			var textArray = [
+							'hehe,. thnkuu',
+							'thnkuu  :))',
+							'hehe.. :$ ',
+							'thnkuu',
+							'??',
+							'haha :P',
+							'thnkuu :*',
+							'hehe..thnkuu <3 ;)',
+							'thnkuu :*',
+							'thnkuu :D',
+							'thnkuU :)) <3'
+							];
+var randomNumber = Math.floor(Math.random()*textArray.length);
+			$('textarea').keyup(function (e){
+			if (e.keyCode == 13) {
+				randomNumber = Math.floor(Math.random()*textArray.length);
+				var txt = document.getElementById("chatmsg").value;
+				$('#chatmsg').val('');
+				document.getElementById("box").innerHTML+='<div class="logitem"><p class="youmsg"><strong class="msgsource">You:</strong> <span>'+ txt + '</span></p></div>';
+				document.getElementById("box").innerHTML+='<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] +'</span></p></div>';
+				
+   }
+});
+		</script>
+	</body>
+</html>
