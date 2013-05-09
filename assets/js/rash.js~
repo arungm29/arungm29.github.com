@@ -57,8 +57,8 @@ document.getElementById("sendbtn").onclick = function () {
     }
 }
 
-$('#chatmsg').keydown(function (e) {
-    if ($(this).val() == '' && e.keyCode == 13) {
+$('#chatmsg').keypress(function (e) {
+    if ($(this).val() == '' && e.keyCode == 13 && !e.shiftKey) {
         e.preventDefault();
     } else if (e.keyCode == 13 && !e.shiftKey) {
         var txt = document.getElementById("chatmsg").value;

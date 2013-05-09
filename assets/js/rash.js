@@ -57,13 +57,14 @@ document.getElementById("sendbtn").onclick = function () {
     }
 }
 
-$('#chatmsg').keydown(function (e) {
+$('#chatmsg').keypress(function (e) {
     if ($(this).val() == '' && e.keyCode == 13 && !e.shiftKey) {
         e.preventDefault();
     } else if (e.keyCode == 13 && !e.shiftKey) {
         var txt = document.getElementById("chatmsg").value;
         var escaped = escapeHtml(txt);
         e.preventDefault();
+	document.getElementById("chatmsg").value = "";
         randomNumber = Math.floor(Math.random() * textArray.length);
         var new_div = document.createElement('div');
         new_div.className = 'logitem';
