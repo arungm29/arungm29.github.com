@@ -53,7 +53,7 @@ document.getElementById("sendbtn").onclick = function () {
             $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
         }
         setTimeout(typing, 1000);
-        setTimeout(rashtype, 2000);
+        setTimeout(rashtype, 5000);
     }
 }
 
@@ -80,7 +80,7 @@ $('#chatmsg').keypress(function (e) {
             $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
         }
         setTimeout(typing, 1000);
-        setTimeout(rashtype, 2000);
+        setTimeout(rashtype, 5000);
 
 
     }
