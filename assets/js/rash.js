@@ -19,17 +19,24 @@ function typing() {
     if (!(document.getElementById('typing'))) {
         document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
         $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
-    } else {
-        $('#typing').remove();
-        document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
-        $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
     }
 }
-
+var flag=0;//typing disabled
 function rashtype() {
+    flag-=1;
+    if(flag==0) {
     $('#typing').remove();
     document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] + '</span></p></div>';
     $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    else {
+ 	$('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] + '</span></p></div>';
+document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    
+    
 }
 document.getElementById("sendbtn").onclick = function () {
     $('#chatmsg').focus();
@@ -61,7 +68,8 @@ $('#chatmsg').keypress(function (e) {
     if ($(this).val() == '' && e.keyCode == 13 && !e.shiftKey) {
         e.preventDefault();
     } else if (e.keyCode == 13 && !e.shiftKey) {
-        var txt = document.getElementById("chatmsg").value;
+	flag+=1;        
+	var txt = document.getElementById("chatmsg").value;
         var escaped = escapeHtml(txt);
         e.preventDefault();
 	document.getElementById("chatmsg").value = "";
