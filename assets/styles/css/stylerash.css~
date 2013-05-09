@@ -131,7 +131,7 @@ border-bottom-right-radius: .5em;
 -moz-border-radius-bottomright: .5em;
 -webkit-border-bottom-right-radius: .5em;
 }
-.sendbtn {
+#sendbtn {
 font-family: sans-serif;
 font-size: 1em;
 background: white;
