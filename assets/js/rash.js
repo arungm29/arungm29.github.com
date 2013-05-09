@@ -42,6 +42,7 @@ document.getElementById("sendbtn").onclick = function () {
     $('#chatmsg').focus();
     if ($("#chatmsg").val() == '') {;
     } else {
+	flag+=1;
         var txt = document.getElementById("chatmsg").value;
         var escaped = escapeHtml(txt);
         document.getElementById("chatmsg").value = "";

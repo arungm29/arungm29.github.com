@@ -16,7 +16,6 @@ var textArray = [
     'thnkuU :)) <3'];
 
 function typing() {
-    flag=0;
     if (!(document.getElementById('typing'))) {
         document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
         $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
