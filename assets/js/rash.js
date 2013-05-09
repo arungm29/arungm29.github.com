@@ -24,6 +24,7 @@ function typing() {
 var flag=0;//typing disabled
 function rashtype() {
     flag-=1;
+randomNumber = Math.floor(Math.random() * textArray.length);
     if(flag==0) {
     $('#typing').remove();
     document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] + '</span></p></div>';
@@ -46,7 +47,6 @@ document.getElementById("sendbtn").onclick = function () {
         var txt = document.getElementById("chatmsg").value;
         var escaped = escapeHtml(txt);
         document.getElementById("chatmsg").value = "";
-        randomNumber = Math.floor(Math.random() * textArray.length);
         var new_div = document.createElement('div');
         new_div.className = "logitem";
         new_div.innerHTML = '<p class="youmsg"><strong class="msgsource">You:</strong> <span>' + escaped + '</span></p>';
@@ -74,7 +74,6 @@ $('#chatmsg').keypress(function (e) {
         var escaped = escapeHtml(txt);
         e.preventDefault();
 	document.getElementById("chatmsg").value = "";
-        randomNumber = Math.floor(Math.random() * textArray.length);
         var new_div = document.createElement('div');
         new_div.className = 'logitem';
         new_div.innerHTML = '<p class="youmsg"><strong class="msgsource">You:</strong> <span>' + escaped + '</span></p>';
