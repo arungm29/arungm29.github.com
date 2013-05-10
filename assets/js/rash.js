@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('#chatmsg').focus();
 });
-
-var textArray = [
+var response;
+var textArray1 = [
     'hehe,. thnkuu',
     'thnkuu  :))',
     'hehe.. :$ ',
@@ -15,64 +15,38 @@ var textArray = [
     'thnkuu :D',
     'thnkuU :)) <3'];
 
-function typing() {
-    if (!(document.getElementById('typing'))) {
-        document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
-        $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
-    }
-}
-var flag=0;//typing disabled
-function rashtype() {
-    flag-=1;
-randomNumber = Math.floor(Math.random() * textArray.length);
-    if(flag==0) {
-    $('#typing').remove();
-    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] + '</span></p></div>';
-    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
-    }
-    else {
- 	$('#typing').remove();
-    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray[randomNumber] + '</span></p></div>';
-document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
-    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
-    }
-    
-    
-}
-document.getElementById("sendbtn").onclick = function () {
-    $('#chatmsg').focus();
-    if ($("#chatmsg").val() == '') {;
-    } else {
-	flag+=1;
-        var txt = document.getElementById("chatmsg").value;
+var textArray2 = [
+    'heyy <3 <3',
+    'hi there ;)',
+    'i was waiting 4 u ;)',
+    'hi :P',
+    'heyyyyy!'];
+
+var textArray3 = [
+    'Ashyyyyyy <3 <3',
+    'I only luv Ashy',
+    'my Ashy <3',
+    'hey u ;)',
+    'luv uu :* <3'];
+
+var textArray4 = [
+    'haha..my momz d photogrphr.. ;) :))'
+   ];
+
+var textArray5 = [
+    'Bt i luv uuu! :(',
+    'bye!',
+    'm going'
+   ];
+
+
+var txt="";
+function input() {
+flag+=1;        
+	txt = document.getElementById("chatmsg").value;
+	txt = txt.replace(/^\s+|\s+$/g,'');
         var escaped = escapeHtml(txt);
-        document.getElementById("chatmsg").value = "";
-        var new_div = document.createElement('div');
-        new_div.className = "logitem";
-        new_div.innerHTML = '<p class="youmsg"><strong class="msgsource">You:</strong> <span>' + escaped + '</span></p>';
-
-
-        if (document.getElementById('typing')) {
-            document.getElementById("box").insertBefore(new_div, document.getElementById("typing"));
-            $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
-        } else {
-
-            document.getElementById("box").innerHTML += '<div class="logitem"><p class="youmsg"><strong class="msgsource">You:</strong> <span>' + escaped + '</span></p></div>';
-            $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
-        }
-        setTimeout(typing, 1000);
-        setTimeout(rashtype, 5000);
-    }
-}
-
-$('#chatmsg').keypress(function (e) {
-    if ($(this).val() == '' && e.keyCode == 13 && !e.shiftKey) {
-        e.preventDefault();
-    } else if (e.keyCode == 13 && !e.shiftKey) {
-	flag+=1;        
-	var txt = document.getElementById("chatmsg").value;
-        var escaped = escapeHtml(txt);
-        e.preventDefault();
+        
 	document.getElementById("chatmsg").value = "";
         var new_div = document.createElement('div');
         new_div.className = 'logitem';
@@ -87,18 +61,136 @@ $('#chatmsg').keypress(function (e) {
             document.getElementById("box").innerHTML += '<div class="logitem"><p class="youmsg"><strong class="msgsource">You:</strong> <span>' + escaped + '</span></p></div>';
             $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
         }
-        setTimeout(typing, 1000);
+}
+
+function checkinput() {
+	if(/hi|hey|heyy/i.test(txt)) 
+	return 0;
+	else if(/ashesh|ashy|rashmi|tanya|tanisha/i.test(txt))
+	return 1;
+	else if(/photo|photos|photographer|photograph|photographs|photographers/i.test(txt))
+	return 2;
+	else if(/bye|shut up|fuck you|fuck off|kill|fuck/i.test(txt))
+	return 3;
+	else
+	return 4;
+}
+
+function typing() {
+    if (!(document.getElementById('typing'))) {
+        document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+        $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+}
+var flag=0;//typing disabled
+function rashtype() {
+    flag-=1;
+if(response==4) {
+randomNumber = Math.floor(Math.random() * textArray1.length);
+    if(flag==0) {
+    $('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray1[randomNumber] + '</span></p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    else {
+ 	$('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray1[randomNumber] + '</span></p></div>';
+document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+}
+else if (response==0) {
+randomNumber = Math.floor(Math.random() * textArray2.length);
+    if(flag==0) {
+    $('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray2[randomNumber] + '</span></p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    else {
+ 	$('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray2[randomNumber] + '</span></p></div>';
+document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+}
+
+else if (response==1) {
+randomNumber = Math.floor(Math.random() * textArray3.length);
+    if(flag==0) {
+    $('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray3[randomNumber] + '</span></p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    else {
+ 	$('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray3[randomNumber] + '</span></p></div>';
+document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+}
+
+else if(response==2) {
+randomNumber = Math.floor(Math.random() * textArray4.length);
+    if(flag==0) {
+    $('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray4[randomNumber] + '</span></p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    else {
+ 	$('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray4[randomNumber] + '</span></p></div>';
+document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+}
+
+else if (response==3) {
+randomNumber = Math.floor(Math.random() * textArray5.length);
+    if(flag==0) {
+    $('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray5[randomNumber] + '</span></p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+    else {
+ 	$('#typing').remove();
+    document.getElementById("box").innerHTML += '<div class="logitem"><p class="strangermsg"><strong class="msgsource">Rashalika:</strong> <span>' + textArray5[randomNumber] + '</span></p></div>';
+document.getElementById("box").innerHTML += '<div class="logitem" id="typing"><p class="statuslog">Rashalika is typing...</p></div>';
+    $('.logbox').scrollTop($('.logbox')[0].scrollHeight);
+    }
+}
+    
+    
+}
+document.getElementById("sendbtn").onclick = function () {
+    $('#chatmsg').focus();
+    if ($("#chatmsg").val().match(/^\s*$/)) {;
+    }else {
+	input();
+
+
+	setTimeout(typing, 1000);
+	response=checkinput();
+        setTimeout(rashtype, 5000);
+    }
+}
+
+$('#chatmsg').keypress(function (e) {
+    if (($(this).val().match(/^\s*$/) && e.keyCode == 13 && !e.shiftKey)) {
+        e.preventDefault();
+}
+   
+    else if (e.keyCode == 13 && !e.shiftKey) {
+	e.preventDefault();
+	input();
+	document.getElementById("chatmsg").value = "";
+	setTimeout(typing, 1000);
+	response=checkinput();
         setTimeout(rashtype, 5000);
 
-
     }
 
 });
-$('#chatmsg').keyup(function (e) {
-    if (e.keyCode == 13 && !e.shiftKey) {
-        document.getElementById("chatmsg").value = "";
-    }
-});
+
 
 var hex = new Array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f');
 
@@ -190,193 +282,193 @@ function escapeCharOther(original) {
             break; //& 
         case 198:
             return "&AElig;";
-            break; //Æ 
+            break; 
         case 193:
             return "&Aacute;";
-            break; //Á 
+            break;  
         case 194:
             return "&Acirc;";
-            break; //Â 
+            break; 
         case 192:
             return "&Agrave;";
-            break; //À 
+            break; 
         case 197:
             return "&Aring;";
-            break; //Å 
+            break;  
         case 195:
             return "&Atilde;";
-            break; //Ã 
+            break; 
         case 196:
             return "&Auml;";
-            break; //Ä 
+            break;  
         case 199:
             return "&Ccedil;";
-            break; //Ç 
+            break; 
         case 208:
             return "&ETH;";
-            break; //Ð 
+            break; 
         case 201:
             return "&Eacute;";
-            break; //É 
+            break; 
         case 202:
             return "&Ecirc;";
-            break; //Ê 
+            break; 
         case 200:
             return "&Egrave;";
-            break; //È 
+            break; 
         case 203:
             return "&Euml;";
-            break; //Ë 
+            break; 
         case 205:
             return "&Iacute;";
-            break; //Í 
+            break; 
         case 206:
             return "&Icirc;";
-            break; //Î 
+            break; 
         case 204:
             return "&Igrave;";
-            break; //Ì 
+            break; 
         case 207:
             return "&Iuml;";
-            break; //Ï 
+            break; 
         case 209:
             return "&Ntilde;";
-            break; //Ñ 
+            break; 
         case 211:
             return "&Oacute;";
-            break; //Ó 
+            break; 
         case 212:
             return "&Ocirc;";
-            break; //Ô 
+            break; 
         case 210:
             return "&Ograve;";
-            break; //Ò 
+            break; 
         case 216:
             return "&Oslash;";
-            break; //Ø 
+            break; 
         case 213:
             return "&Otilde;";
-            break; //Õ 
+            break; 
         case 214:
             return "&Ouml;";
-            break; //Ö 
+            break; 
         case 222:
             return "&THORN;";
-            break; //Þ 
+            break; 
         case 218:
             return "&Uacute;";
-            break; //Ú 
+            break; 
         case 219:
             return "&Ucirc;";
-            break; //Û 
+            break; 
         case 217:
             return "&Ugrave;";
-            break; //Ù 
+            break; 
         case 220:
             return "&Uuml;";
-            break; //Ü 
+            break; 
         case 221:
             return "&Yacute;";
-            break; //Ý 
+            break; //\DD 
         case 225:
             return "&aacute;";
-            break; //á 
+            break; //\E1 
         case 226:
             return "&acirc;";
-            break; //â 
+            break; //\E2 
         case 230:
             return "&aelig;";
-            break; //æ 
+            break; //\E6 
         case 224:
             return "&agrave;";
-            break; //à 
+            break; //\E0 
         case 229:
             return "&aring;";
-            break; //å 
+            break; //\E5 
         case 227:
             return "&atilde;";
-            break; //ã 
+            break; //\E3 
         case 228:
             return "&auml;";
-            break; //ä 
+            break; //\E4 
         case 231:
             return "&ccedil;";
-            break; //ç 
+            break; //\E7 
         case 233:
             return "&eacute;";
-            break; //é 
+            break; //\E9 
         case 234:
             return "&ecirc;";
-            break; //ê 
+            break; //\EA 
         case 232:
             return "&egrave;";
-            break; //è 
+            break; //\E8 
         case 240:
             return "&eth;";
-            break; //ð 
+            break; //\F0 
         case 235:
             return "&euml;";
-            break; //ë 
+            break; //\EB 
         case 237:
             return "&iacute;";
-            break; //í 
+            break; //\ED 
         case 238:
             return "&icirc;";
-            break; //î 
+            break; //\EE 
         case 236:
             return "&igrave;";
-            break; //ì 
+            break; //\EC 
         case 239:
             return "&iuml;";
-            break; //ï 
+            break; //\EF 
         case 241:
             return "&ntilde;";
-            break; //ñ 
+            break; //\F1 
         case 243:
             return "&oacute;";
-            break; //ó 
+            break; //\F3 
         case 244:
             return "&ocirc;";
-            break; //ô 
+            break; //\F4 
         case 242:
             return "&ograve;";
-            break; //ò 
+            break; //\F2 
         case 248:
             return "&oslash;";
-            break; //ø 
+            break; //\F8 
         case 245:
             return "&otilde;";
-            break; //õ 
+            break; //\F5 
         case 246:
             return "&ouml;";
-            break; //ö 
+            break; //\F6 
         case 223:
             return "&szlig;";
-            break; //ß 
+            break; //\DF 
         case 254:
             return "&thorn;";
-            break; //þ 
+            break; //\FE 
         case 250:
             return "&uacute;";
-            break; //ú 
+            break; //\FA 
         case 251:
             return "&ucirc;";
-            break; //û 
+            break; //\FB 
         case 249:
             return "&ugrave;";
-            break; //ù 
+            break; //\F9 
         case 252:
             return "&uuml;";
-            break; //ü 
+            break; //\FC 
         case 253:
             return "&yacute;";
-            break; //ý 
+            break; //\FD 
         case 255:
             return "&yuml;";
-            break; //ÿ 
+            break; //\FF 
         case 162:
             return "&cent;";
-            break; //¢ 
+            break; //\A2 
         default:
             found = false;
             break;
